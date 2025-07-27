@@ -9,23 +9,16 @@ O AgendaWeb é uma aplicação web robusta que permite aos usuários gerenciar s
 ✨ Principais Funcionalidades
 
 • Sistema de Autenticação: Login e registro de usuários com sessões seguras
-
 • Dashboard Interativo: Visão geral dos eventos com estatísticas por prioridade e status
 
-•
-Gerenciamento de Eventos: CRUD completo com validações robustas
+• Gerenciamento de Eventos: CRUD completo com validações robustas
 
-•
-Sistema de Prioridades: Classificação de eventos em alta, média e baixa prioridade
+• Sistema de Prioridades: Classificação de eventos em alta, média e baixa prioridade
 
-•
-Filtros Avançados: Consulta de eventos por período e status (ativo/inativo)
+• Filtros Avançados: Consulta de eventos por período e status (ativo/inativo)
 
-•
-Geração de Relatórios: Exportação em PDF e Excel com dados filtrados
-
-•
-Interface Responsiva: Design moderno e adaptável para diferentes dispositivos
+• Geração de Relatórios: Exportação em PDF e Excel com dados filtrados
+• Interface Responsiva: Design moderno e adaptável para diferentes dispositivos
 
 •
 Arquitetura Escalável: Separação clara de responsabilidades em camadas
