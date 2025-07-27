@@ -9,6 +9,7 @@ O AgendaWeb é uma aplicação web robusta que permite aos usuários gerenciar s
 ✨ Principais Funcionalidades
 
 • Sistema de Autenticação: Login e registro de usuários com sessões seguras
+
 • Dashboard Interativo: Visão geral dos eventos com estatísticas por prioridade e status
 
 • Gerenciamento de Eventos: CRUD completo com validações robustas
@@ -18,10 +19,10 @@ O AgendaWeb é uma aplicação web robusta que permite aos usuários gerenciar s
 • Filtros Avançados: Consulta de eventos por período e status (ativo/inativo)
 
 • Geração de Relatórios: Exportação em PDF e Excel com dados filtrados
+
 • Interface Responsiva: Design moderno e adaptável para diferentes dispositivos
 
-•
-Arquitetura Escalável: Separação clara de responsabilidades em camadas
+• Arquitetura Escalável: Separação clara de responsabilidades em camadas
 
 🛠️ Tecnologias Utilizadas
 
@@ -30,41 +31,31 @@ Backend
 •
 ASP.NET Core 6.0: Framework principal para desenvolvimento web
 
-•
-Entity Framework Core: ORM para acesso a dados
+• Entity Framework Core: ORM para acesso a dados
 
-•
-C#: Linguagem de programação principal
+• C#: Linguagem de programação principal
 
 Frontend
 
-•
-Bootstrap 5: Framework CSS para interface responsiva
+• Bootstrap 5: Framework CSS para interface responsiva
 
-•
-HTML5/CSS3: Estrutura e estilização das páginas
+• HTML5/CSS3: Estrutura e estilização das páginas
 
-•
-JavaScript: Interatividade do lado cliente
+• JavaScript: Interatividade do lado cliente
 
 Relatórios
 
-•
-iTextSharp/PDF: Geração de relatórios em PDF
+• iTextSharp/PDF: Geração de relatórios em PDF
 
-•
-EPPlus/Excel: Geração de relatórios em Excel
+• EPPlus/Excel: Geração de relatórios em Excel
 
 Arquitetura
 
-•
-MVC Pattern: Padrão Model-View-Controller
+• MVC Pattern: Padrão Model-View-Controller
 
-•
-Repository Pattern: Abstração da camada de dados
+• Repository Pattern: Abstração da camada de dados
 
-•
-Dependency Injection: Inversão de controle e injeção de dependências
+• Dependency Injection: Inversão de controle e injeção de dependências
 
 📁 Estrutura do Projeto
 
@@ -72,6 +63,7 @@ O projeto segue uma arquitetura em camadas bem definida, promovendo separação 
 
 Plain Text
 
+...
 
 AgendaWeb/
 ├── AgendaWeb.Presentation/          # Camada de Apresentação (MVC)
