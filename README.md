@@ -1,5 +1,5 @@
 📅 AgendaWeb
- 
+
 Um sistema web completo para gerenciamento de eventos e agenda pessoal, desenvolvido em ASP.NET Core 6.0 com arquitetura em camadas e interface responsiva.
 
 🚀 Sobre o Projeto
@@ -8,21 +8,29 @@ O AgendaWeb é uma aplicação web robusta que permite aos usuários gerenciar s
 
 ✨ Principais Funcionalidades
 
-• Sistema de Autenticação: Login e registro de usuários com sessões seguras
+•
+Sistema de Autenticação: Login e registro de usuários com sessões seguras
 
-• Dashboard Interativo: Visão geral dos eventos com estatísticas por prioridade e status
+•
+Dashboard Interativo: Visão geral dos eventos com estatísticas por prioridade e status
 
-• Gerenciamento de Eventos: CRUD completo com validações robustas
+•
+Gerenciamento de Eventos: CRUD completo com validações robustas
 
-• Sistema de Prioridades: Classificação de eventos em alta, média e baixa prioridade
+•
+Sistema de Prioridades: Classificação de eventos em alta, média e baixa prioridade
 
-• Filtros Avançados: Consulta de eventos por período e status (ativo/inativo)
+•
+Filtros Avançados: Consulta de eventos por período e status (ativo/inativo)
 
-• Geração de Relatórios: Exportação em PDF e Excel com dados filtrados
+•
+Geração de Relatórios: Exportação em PDF e Excel com dados filtrados
 
-• Interface Responsiva: Design moderno e adaptável para diferentes dispositivos
+•
+Interface Responsiva: Design moderno e adaptável para diferentes dispositivos
 
-• Arquitetura Escalável: Separação clara de responsabilidades em camadas
+•
+Arquitetura Escalável: Separação clara de responsabilidades em camadas
 
 🛠️ Tecnologias Utilizadas
 
@@ -31,31 +39,41 @@ Backend
 •
 ASP.NET Core 6.0: Framework principal para desenvolvimento web
 
-• Entity Framework Core: ORM para acesso a dados
+•
+Entity Framework Core: ORM para acesso a dados
 
-• C#: Linguagem de programação principal
+•
+C#: Linguagem de programação principal
 
 Frontend
 
-• Bootstrap 5: Framework CSS para interface responsiva
+•
+Bootstrap 5: Framework CSS para interface responsiva
 
-• HTML5/CSS3: Estrutura e estilização das páginas
+•
+HTML5/CSS3: Estrutura e estilização das páginas
 
-• JavaScript: Interatividade do lado cliente
+•
+JavaScript: Interatividade do lado cliente
 
 Relatórios
 
-• iTextSharp/PDF: Geração de relatórios em PDF
+•
+iTextSharp/PDF: Geração de relatórios em PDF
 
-• EPPlus/Excel: Geração de relatórios em Excel
+•
+EPPlus/Excel: Geração de relatórios em Excel
 
 Arquitetura
 
-• MVC Pattern: Padrão Model-View-Controller
+•
+MVC Pattern: Padrão Model-View-Controller
 
-• Repository Pattern: Abstração da camada de dados
+•
+Repository Pattern: Abstração da camada de dados
 
-• Dependency Injection: Inversão de controle e injeção de dependências
+•
+Dependency Injection: Inversão de controle e injeção de dependências
 
 📁 Estrutura do Projeto
 
@@ -63,36 +81,32 @@ O projeto segue uma arquitetura em camadas bem definida, promovendo separação 
 
 Plain Text
 
-...
-AgendaWeb/ 
+
+AgendaWeb/
 ├── AgendaWeb.Presentation/          # Camada de Apresentação (MVC)
-
 │   ├── Controllers/                 # Controladores da aplicação
-
 │   │   ├── AccountController.cs     # Autenticação e registro
-
 │   │   ├── AgendaController.cs      # Gerenciamento de eventos
-
 │   │   └── HomeController.cs        # Dashboard e página inicial
-
 │   ├── Models/                      # ViewModels para as páginas
-
 │   ├── Views/                       # Páginas Razor (HTML/CSS)
 │   ├── wwwroot/                     # Arquivos estáticos (CSS, JS, imagens)
 │   └── Program.cs                   # Configuração da aplicação
 │
-├── AgendaWeb.Infra.Data/            # Camada de Infraestrutura
+├── AgendaWeb.Infra.Data/           # Camada de Infraestrutura
 │   ├── Entities/                    # Entidades do domínio
-│   │   ├── Evento.cs                # Modelo de dados do evento
-│   │   └── Usuario.cs               # Modelo de dados do usuário
+│   │   ├── Evento.cs               # Modelo de dados do evento
+│   │   └── Usuario.cs              # Modelo de dados do usuário
 │   ├── Interfaces/                  # Contratos dos repositórios
 │   ├── Repositories/                # Implementação dos repositórios
 │   └── Context/                     # Contexto do Entity Framework
 │
-├── AgendaWeb.Reports/               # Camada de Relatórios
-├── Services/                        # Implementação dos geradores de relatório
-├── EventoReportServicePdf.cs        # Geração de relatórios PDF
-└── EventoReportServiceExcel.cs      # Geração de relatórios Excel
+└── AgendaWeb.Reports/              # Camada de Relatórios
+    ├── Interfaces/                  # Contratos dos serviços de relatório
+    └── Services/                    # Implementação dos geradores de relatório
+        ├── EventoReportServicePdf.cs    # Geração de relatórios PDF
+        └── EventoReportServiceExcel.cs  # Geração de relatórios Excel
+
 
 🎯 Responsabilidades das Camadas
 
