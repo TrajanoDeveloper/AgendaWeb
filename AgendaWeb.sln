@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgendaWeb.Presentation", "AgendaWeb.Presentation\AgendaWeb.Presentation.csproj", "{3BA71011-B4B6-4537-9C57-AC92FABF877A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{1200C3E1-638A-4A0D-B07F-3D41879656AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Repository", "2 - Repository", "{5E4DC9C6-5359-4036-AD64-4CDA39B95DC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgendaWeb.Infra.Data", "AgendaWeb.Infra.Data\AgendaWeb.Infra.Data.csproj", "{B01D8EFD-1FE6-4391-84CA-FEE172AE39C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Reports", "3 - Reports", "{C508106F-3D8B-4E26-847E-D6120114B412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaWeb.Reports", "AgendaWeb.Reports\AgendaWeb.Reports.csproj", "{8BB4D190-74F6-41DC-8A41-7118EEC55601}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BA71011-B4B6-4537-9C57-AC92FABF877A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA71011-B4B6-4537-9C57-AC92FABF877A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA71011-B4B6-4537-9C57-AC92FABF877A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA71011-B4B6-4537-9C57-AC92FABF877A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B01D8EFD-1FE6-4391-84CA-FEE172AE39C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B01D8EFD-1FE6-4391-84CA-FEE172AE39C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B01D8EFD-1FE6-4391-84CA-FEE172AE39C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B01D8EFD-1FE6-4391-84CA-FEE172AE39C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB4D190-74F6-41DC-8A41-7118EEC55601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB4D190-74F6-41DC-8A41-7118EEC55601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB4D190-74F6-41DC-8A41-7118EEC55601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB4D190-74F6-41DC-8A41-7118EEC55601}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BA71011-B4B6-4537-9C57-AC92FABF877A} = {1200C3E1-638A-4A0D-B07F-3D41879656AB}
+		{B01D8EFD-1FE6-4391-84CA-FEE172AE39C6} = {5E4DC9C6-5359-4036-AD64-4CDA39B95DC8}
+		{8BB4D190-74F6-41DC-8A41-7118EEC55601} = {C508106F-3D8B-4E26-847E-D6120114B412}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F9F7680-666F-4447-A817-B69FFB783803}
+	EndGlobalSection
+EndGlobal
