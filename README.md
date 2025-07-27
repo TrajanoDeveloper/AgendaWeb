@@ -84,27 +84,49 @@ Plain Text
 
 AgendaWeb/
 ├── AgendaWeb.Presentation/          # Camada de Apresentação (MVC)
+
 │   ├── Controllers/                 # Controladores da aplicação
+
 │   │   ├── AccountController.cs     # Autenticação e registro
+
 │   │   ├── AgendaController.cs      # Gerenciamento de eventos
+
 │   │   └── HomeController.cs        # Dashboard e página inicial
+
 │   ├── Models/                      # ViewModels para as páginas
+
 │   ├── Views/                       # Páginas Razor (HTML/CSS)
+
 │   ├── wwwroot/                     # Arquivos estáticos (CSS, JS, imagens)
+
 │   └── Program.cs                   # Configuração da aplicação
+
 │
+
 ├── AgendaWeb.Infra.Data/           # Camada de Infraestrutura
+
 │   ├── Entities/                    # Entidades do domínio
+
 │   │   ├── Evento.cs               # Modelo de dados do evento
+
 │   │   └── Usuario.cs              # Modelo de dados do usuário
+
 │   ├── Interfaces/                  # Contratos dos repositórios
+
 │   ├── Repositories/                # Implementação dos repositórios
+
 │   └── Context/                     # Contexto do Entity Framework
+
 │
+
 └── AgendaWeb.Reports/              # Camada de Relatórios
+
     ├── Interfaces/                  # Contratos dos serviços de relatório
+    
     └── Services/                    # Implementação dos geradores de relatório
+    
         ├── EventoReportServicePdf.cs    # Geração de relatórios PDF
+        
         └── EventoReportServiceExcel.cs  # Geração de relatórios Excel
 
 
