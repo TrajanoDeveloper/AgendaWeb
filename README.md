@@ -66,11 +66,17 @@ Plain Text
 ...
 AgendaWeb/
 ├── AgendaWeb.Presentation/          # Camada de Apresentação (MVC)
+
 │   ├── Controllers/                 # Controladores da aplicação
+
 │   │   ├── AccountController.cs     # Autenticação e registro
+
 │   │   ├── AgendaController.cs      # Gerenciamento de eventos
+
 │   │   └── HomeController.cs        # Dashboard e página inicial
+
 │   ├── Models/                      # ViewModels para as páginas
+
 │   ├── Views/                       # Páginas Razor (HTML/CSS)
 │   ├── wwwroot/                     # Arquivos estáticos (CSS, JS, imagens)
 │   └── Program.cs                   # Configuração da aplicação
