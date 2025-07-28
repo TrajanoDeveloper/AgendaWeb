@@ -1,5 +1,10 @@
 📅 AgendaWeb
 
+👍 Para acessar use o link "alexandretrajano-001-site1.anytempurl.com". Está disponível para visitas e testes! Caso ao acessar pelo link e solicite uma autorzação para acessar a aplicação, utilize os dados abaixo:
+
+** usuario: 11256974  - Senha: 60-dayfreetrial**
+
+
 Um sistema web completo para gerenciamento de eventos e agenda pessoal, desenvolvido em ASP.NET Core 6.0 com arquitetura em camadas e interface responsiva.
 
 🚀 Sobre o Projeto
@@ -74,6 +79,11 @@ Repository Pattern: Abstração da camada de dados
 
 •
 Dependency Injection: Inversão de controle e injeção de dependências
+
+🖼 Telas da aplicação
+
+![Tela de login](./img/tela de login.png)
+
 
 📁 Estrutura do Projeto
 
