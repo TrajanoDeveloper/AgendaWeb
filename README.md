@@ -241,104 +241,77 @@ A aplicação estará disponível em https://localhost:5001 ou http://localhost:
 
 Primeiro Acesso
 
-1.
-Registro: Acesse a página de registro e crie uma nova conta
+1. Registro: Acesse a página de registro e crie uma nova conta
 
-2.
-Login: Faça login com suas credenciais
+2. Login: Faça login com suas credenciais
 
-3.
-Dashboard: Visualize o painel principal com estatísticas dos seus eventos
+3. Dashboard: Visualize o painel principal com estatísticas dos seus eventos
 
 Gerenciamento de Eventos
 
 Cadastrar Novo Evento
 
-1.
-Navegue para "Agenda" → "Cadastro"
+1. Navegue para "Agenda" → "Cadastro"
 
-2.
-Preencha os campos obrigatórios:
+2. Preencha os campos obrigatórios:
 
-•
-Nome do evento
+• Nome do evento
 
-•
-Data e hora
+• Data e hora
 
-•
-Descrição
+• Descrição
 
-•
-Prioridade (Alta, Média, Baixa)
+• Prioridade (Alta, Média, Baixa)
 
 
 
-3.
-Clique em "Salvar"
+3. Clique em "Salvar"
 
 Consultar Eventos
 
-1.
-Acesse "Agenda" → "Consulta"
+1. Acesse "Agenda" → "Consulta"
 
-2.
-Defina o período de consulta
+2. Defina o período de consulta
 
-3.
-Escolha o status (Ativo/Inativo)
+3. Escolha o status (Ativo/Inativo)
 
-4.
-Visualize os resultados em uma tabela organizada
+4. Visualize os resultados em uma tabela organizada
 
 Editar Evento
 
-1.
-Na consulta de eventos, clique no ícone de edição
+1. Na consulta de eventos, clique no ícone de edição
 
-2.
-Modifique os campos necessários
+2. Modifique os campos necessários
 
-3.
-Salve as alterações
-
+3. Salve as alterações
+ 
 Excluir Evento
 
-1.
-Na consulta de eventos, clique no ícone de exclusão
+1. Na consulta de eventos, clique no ícone de exclusão
 
-2.
-Confirme a operação
+2. Confirme a operação
 
 Geração de Relatórios
 
 Relatório PDF
 
-1.
-Acesse "Agenda" → "Relatório"
+1. Acesse "Agenda" → "Relatório"
 
-2.
-Selecione o período desejado
+2. Selecione o período desejado
 
-3.
-Escolha o status dos eventos
+3. Escolha o status dos eventos
 
-4.
-Selecione "PDF" como formato
+4. Selecione "PDF" como formato
 
-5.
-Clique em "Gerar Relatório"
+5. Clique em "Gerar Relatório"
 
 Relatório Excel
 
-1.
-Siga os mesmos passos acima
+1. Siga os mesmos passos acima
 
-2.
-Selecione "Excel" como formato
+2. Selecione "Excel" como formato
 
-3.
-O arquivo será baixado automaticamente
+3. O arquivo será baixado automaticamente
 
 🏗️ Arquitetura e Padrões
 
@@ -450,383 +423,8 @@ AgendaWeb.Tests/
 └── E2E/                   # Testes end-to-end
 
 
-Executar Testes
 
-Bash
 
-
-dotnet test
-
-
-🚀 Deploy e Produção
-
-Deploy no IIS
-
-1.
-Publique a aplicação:
-
-Bash
-
-
-dotnet publish -c Release -o ./publish
-
-
-1.
-Configure o IIS com o módulo ASP.NET Core
-
-2.
-Aponte para a pasta de publicação
-
-3.
-Configure a string de conexão de produção
-
-Deploy no Azure
-
-1.
-Configure o Azure App Service
-
-2.
-Configure a string de conexão no portal
-
-3.
-Use Azure DevOps ou GitHub Actions para CI/CD
-
-Variáveis de Ambiente
-
-Bash
-
-
-ASPNETCORE_ENVIRONMENT=Production
-ConnectionStrings__DefaultConnection=sua-string-de-conexao
-
-
-🤝 Contribuindo
-
-Contribuições são sempre bem-vindas! Para contribuir:
-
-1.
-Fork o projeto
-
-2.
-Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
-
-3.
-Commit suas mudanças (git commit -m 'Add some AmazingFeature')
-
-4.
-Push para a branch (git push origin feature/AmazingFeature)
-
-5.
-Abra um Pull Request
-
-Diretrizes de Contribuição
-
-•
-Mantenha o código limpo e bem documentado
-
-•
-Siga os padrões de codificação C# estabelecidos
-
-•
-Adicione testes para novas funcionalidades
-
-•
-Atualize a documentação quando necessário
-
-•
-Use mensagens de commit descritivas
-
-📝 Roadmap
-
-Próximas Funcionalidades
-
-
-
-
-Notificações: Sistema de lembretes por email
-
-
-
-
-Calendário Visual: Interface de calendário interativo
-
-
-
-
-Categorias: Organização de eventos por categorias
-
-
-
-
-Compartilhamento: Compartilhar eventos entre usuários
-
-
-
-
-API REST: Endpoints para integração com aplicativos móveis
-
-
-
-
-Temas: Personalização visual da interface
-
-
-
-
-Exportação iCal: Compatibilidade com calendários externos
-
-
-
-
-Busca Avançada: Filtros mais específicos e busca textual
-
-Melhorias Técnicas
-
-
-
-
-Testes Automatizados: Cobertura completa de testes
-
-
-
-
-Docker: Containerização da aplicação
-
-
-
-
-Logging: Sistema de logs estruturado
-
-
-
-
-Cache: Implementação de cache para melhor performance
-
-
-
-
-Monitoramento: Métricas e health checks
-
-🐛 Solução de Problemas
-
-Problemas Comuns
-
-Erro de Conexão com Banco de Dados
-
-Plain Text
-
-
-Verifique se:
-- SQL Server está executando
-- String de conexão está correta
-- Migrações foram aplicadas (dotnet ef database update)
-
-
-Erro 404 ao Acessar Páginas
-
-Plain Text
-
-
-Certifique-se de que:
-- A aplicação está executando na porta correta
-- As rotas estão configuradas adequadamente
-- O usuário está autenticado (para páginas protegidas)
-
-
-Problemas com Relatórios
-
-Plain Text
-
-
-Verifique se:
-- As bibliotecas de geração de PDF/Excel estão instaladas
-- Há eventos no período selecionado
-- As permissões de escrita estão configuradas
-
-
-Logs e Debugging
-
-Para habilitar logs detalhados, configure o appsettings.json:
-
-JSON
-
-
-{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning",
-      "AgendaWeb": "Debug"
-    }
-  }
-}
-
-
-📈 Performance
-
-Otimizações Implementadas
-
-•
-Lazy Loading: Carregamento sob demanda de dados relacionados
-
-•
-Paginação: Limitação de resultados em consultas grandes
-
-•
-Índices de Banco: Otimização de consultas frequentes
-
-•
-ViewModels: Transferência apenas dos dados necessários
-
-•
-Compressão: Compressão de respostas HTTP
-
-Métricas Recomendadas
-
-•
-Tempo de resposta das páginas < 2 segundos
-
-•
-Uso de memória estável durante operação
-
-•
-Zero vazamentos de memória em sessões longas
-
-•
-Taxa de erro < 1% em operações CRUD
-
-🔧 Configurações Avançadas
-
-Personalização do Banco de Dados
-
-Para usar PostgreSQL em vez de SQL Server:
-
-JSON
-
-
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Host=localhost;Database=agendaweb;Username=postgres;Password=sua-senha"
-  }
-}
-
-
-E instale o provider:
-
-Bash
-
-
-dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
-
-
-Configuração de Email (Futuro)
-
-JSON
-
-
-{
-  "EmailSettings": {
-    "SmtpServer": "smtp.gmail.com",
-    "SmtpPort": 587,
-    "Username": "seu-email@gmail.com",
-    "Password": "sua-senha-app"
-  }
-}
-
-
-📚 Recursos Adicionais
-
-Documentação Técnica
-
-•
-ASP.NET Core Documentation
-
-•
-Entity Framework Core
-
-•
-Bootstrap Documentation
-
-Tutoriais Relacionados
-
-•
-Clean Architecture in ASP.NET Core
-
-•
-Repository Pattern Implementation
-
-🏆 Reconhecimentos
-
-Este projeto foi desenvolvido como uma demonstração de boas práticas em desenvolvimento web com ASP.NET Core, incorporando padrões de arquitetura modernos e técnicas de desenvolvimento profissional.
-
-Tecnologias e Bibliotecas Utilizadas
-
-•
-Microsoft ASP.NET Core: Framework web principal
-
-•
-Entity Framework Core: ORM para acesso a dados
-
-•
-Bootstrap: Framework CSS responsivo
-
-•
-iTextSharp: Geração de documentos PDF
-
-•
-EPPlus: Manipulação de planilhas Excel
-
-•
-Newtonsoft.Json: Serialização JSON
-
-📄 Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
-
-Plain Text
-
-
-MIT License
-
-Copyright (c) 2024 AgendaWeb
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-
-📞 Contato
-
-Para dúvidas, sugestões ou contribuições:
-
-•
-Email: contato@agendaweb.com
-
-•
-GitHub Issues: Reportar Problemas
-
-•
-Discussions: Discussões do Projeto
-
-
-
-
-
-<div align="center">
 
 ⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório! ⭐
 
