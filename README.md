@@ -134,6 +134,20 @@ Plain Text
     |   |   └── appsettings.Development.json
     |   └── Program.cs
     ├── 2 - Repository
+    |   ├── AgendaWeb.InfraData/ 
+    │   |  ├── Dependências/
+    |   |  ├── Entities/
+    |   |  |   ├── Evento.cs
+    |   |  |   └── Usuario.cs
+    |   |  ├── Interfaces/
+    |   |  |   ├── IBaseRepository.cs
+    |   |  |   ├── IEventoRepository.cs
+    |   |  |   └── IusuarioRepository.cs
+    |   |  ├── Repositories/
+    |   |  |   ├── EventoRepository.cs
+    |   |  |   └── UsuarioRepository.cs
+    |   |  ├── Repositories/
+    |   |  |   └── CriptografiaUtil.cs
     ├── 3 - Reports
     
     │   ├── wwwroot/                     # Arquivos estáticos (CSS, JS, imagens)
