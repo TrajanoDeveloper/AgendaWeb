@@ -80,9 +80,25 @@ Repository Pattern: Abstração da camada de dados
 •
 Dependency Injection: Inversão de controle e injeção de dependências
 
-🖼 Telas da aplicação
+🖼 Telas de Login
 
 ![Tela de Login](AgendaWeb.Presentation/wwwroot/img/tela_de_login.PNG)
+
+🖼 Telas Inicial
+
+![Tela de Login](AgendaWeb.Presentation/wwwroot/img/tela_inicial.PNG)
+
+🖼 Telas de Cadastro
+
+![Tela de Login](AgendaWeb.Presentation/wwwroot/img/tela_de_cadastro.PNG)
+
+🖼 Telas de Consulta
+
+![Tela de Login](AgendaWeb.Presentation/wwwroot/img/tela_de_consulta.PNG)
+
+🖼 Telas de Relatórios
+
+![Tela de Login](AgendaWeb.Presentation/wwwroot/img/tela_de_relatórios.PNG)
 
 
 📁 Estrutura do Projeto
