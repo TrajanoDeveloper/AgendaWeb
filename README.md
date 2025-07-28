@@ -84,7 +84,24 @@ Plain Text
 
     AgendaWeb/
     ├── 1 - Presentation
-    |   ├── AgendaWeb.Presentation/          # Camada de Apresentação (MVC)
+    |   ├── AgendaWeb.Presentation/         # Camada de Apresentação (MVC)
+    │   |  ├── Connected Services/
+    |   |  |   ├── Banco de Dados
+    │   |  ├── Dependências/
+    │   |  ├── Properties/
+    |   |  |   ├── PublishProfiles
+    |   |  |   |   └── FolderProfile.pubxml
+    |   |  |   ├── launchSettings.json
+    │   |  ├── wwwroot/
+    |   |  |   ├── CSS
+    |   |  |   |   ├── bootstrap.css
+    |   |  |   |   ├── bootstrap-grid.css
+    |   |  |   |   ├── bootstrap-reboot.css
+    |   |  |   |   └── bootstrap-utilities.css
+    |   |  |   ├── img
+    |   |  |   |   └── perfil.jpg
+    |   |  |   ├── js
+    |   |  |   |   └── bootstrap.js
     │   |  ├── Controllers/                 # Controladores da aplicação
     │   |  │   ├── AccountController.cs     # Autenticação e registro
     │   |  │   ├── AgendaController.cs      # Gerenciamento de eventos
