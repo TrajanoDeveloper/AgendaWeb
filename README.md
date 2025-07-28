@@ -84,7 +84,7 @@ Plain Text
 
     AgendaWeb/
     ├── 1 - Presentation
-    |   ├── AgendaWeb.Presentation/         # Camada de Apresentação (MVC)
+    |   ├── AgendaWeb.Presentation/         
     │   |  ├── Connected Services/
     |   |  |   ├── Banco de Dados
     │   |  ├── Dependências/
@@ -102,11 +102,11 @@ Plain Text
     |   |  |   |   └── perfil.jpg
     |   |  |   ├── js
     |   |  |   |   └── bootstrap.js
-    │   |  ├── Controllers/                 # Controladores da aplicação
-    │   |  │   ├── AccountController.cs     # Autenticação e registro
-    │   |  │   ├── AgendaController.cs      # Gerenciamento de eventos
-    │   |  │   └── HomeController.cs        # Dashboard e página inicial
-    │   |  ├── Models/                      # ViewModels para as páginas
+    │   |  ├── Controllers/                 
+    │   |  │   ├── AccountController.cs     
+    │   |  │   ├── AgendaController.cs      
+    │   |  │   └── HomeController.cs        
+    │   |  ├── Models/                      
     |   |  |   ├── AccountLoginViewModel.cs
     |   |  |   ├── AccountRegisterViewModel.cs
     |   |  |   ├── DashboardViewModel.cs
@@ -115,7 +115,7 @@ Plain Text
     |   |  |   ├── EventoEdicaoViewModel.cs
     |   |  |   ├── EventoEdicaoViewModel.cs
     |   |  |   └── UserIdentityModel.cs
-    │   |  ├── Views/                       # Páginas Razor (HTML/CSS)
+    │   |  ├── Views/                       
     |   |  |   └── Account
     |   |  |   |   ├── Login.cshtml
     |   |  |   |   ├── Register.cshtml
@@ -149,14 +149,13 @@ Plain Text
     |   |  ├── Repositories/
     |   |  |   └── CriptografiaUtil.cs
     ├── 3 - Reports
-    
-    │   ├── wwwroot/                     # Arquivos estáticos (CSS, JS, imagens)
-    └── Program.cs                   # Configuração da aplicação
-    
-    └── Services/                    # Implementação dos geradores de relatório    
-        ├── EventoReportServicePdf.cs    # Geração de relatórios PDF        
-        └── EventoReportServiceExcel.cs  # Geração de relatórios Excel
-        
+    |   ├── AgendaWeb.Reports/ 
+    │   |  ├── Dependências/
+    |   |  ├── Interfaces/
+    |   |  |   └── IEventoReportService.cs
+    |   |  ├── Services/
+    |   |  |   ├── EventoReportServiceExcel.cs
+    |   |  |   └── EventoReportServicePdf.cs      
 
 
 🎯 Responsabilidades das Camadas
