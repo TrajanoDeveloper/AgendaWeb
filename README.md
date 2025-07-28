@@ -192,7 +192,7 @@ Git para controle de versão
 Bash
 
 
-git clone https://github.com/seu-usuario/AgendaWeb.git
+git clone https://github.com/TrajanoDeveloper/AgendaWeb.git
 cd AgendaWeb
 
 
