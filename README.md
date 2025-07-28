@@ -82,7 +82,7 @@ Dependency Injection: Inversão de controle e injeção de dependências
 
 🖼 Telas da aplicação
 
-![Tela de Login](./img/tela_de_login.png)
+![Tela de Login](AgendaWeb.Presentation/wwwroot/img/tela_de_login.PNG)
 
 
 📁 Estrutura do Projeto
