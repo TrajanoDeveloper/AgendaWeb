@@ -210,13 +210,11 @@ Edite o arquivo appsettings.json na pasta AgendaWeb.Presentation e configure sua
 
 JSON
 
-
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=AgendaWebDB;Trusted_Connection=true;MultipleActiveResultSets=true"
-  }
-}
-
+    {
+      "ConnectionStrings": {
+        "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=AgendaWebDB;Trusted_Connection=true;MultipleActiveResultSets=true"
+      }
+    }
 
 4. Executar Migrações do Banco de Dados
 
@@ -335,9 +333,9 @@ Entidade Evento
 
 Plain Text
 
-
-public class Evento
-{
+    // Relacionamento
+    public Usuario Usuario { get; set;}
+    {
     public Guid Id { get; set; }
     public string Nome { get; set; }
     public DateTime Data { get; set; }
@@ -348,29 +346,30 @@ public class Evento
     public DateTime DataAlteracao { get; set; }
     public int Ativo { get; set; }       // 0=Inativo, 1=Ativo
     public Guid IdUsuario { get; set; }
-    
-    // Relacionamento
-    public Usuario Usuario { get; set; }
-}
+
+     // Relacionamento
+    public Usuario Usuario { get; set;}
+
+    }
+
 
 
 Entidade Usuario
 
 Plain Text
 
-
-public class Usuario
-{
+    {
     public Guid Id { get; set; }
     public string Nome { get; set; }
     public string Email { get; set; }
     public string Senha { get; set; }
     public DateTime DataInclusao { get; set; }
-    
+
     // Relacionamento
     public List<Evento> Eventos { get; set; }
-}
+    public class Usuario
 
+    }
 
 🔒 Segurança
 
@@ -413,14 +412,16 @@ Estrutura de Testes Recomendada
 
 Plain Text
 
-
-AgendaWeb.Tests/
-├── Unit/                    # Testes unitários
-│   ├── Controllers/         # Testes dos controladores
-│   ├── Repositories/        # Testes dos repositórios
-│   └── Services/           # Testes dos serviços
-├── Integration/            # Testes de integração
-└── E2E/                   # Testes end-to-end
+    // Relacionamento
+    public List<Evento> Eventos { get; set; }
+    public class Usuario
+    AgendaWeb.Tests/
+    ├── Unit/                    # Testes unitários
+    │   ├── Controllers/         # Testes dos controladores
+    │   ├── Repositories/        # Testes dos repositório
+    │   └── Services/           # Testes dos serviços
+    ├── Integration/            # Testes de integração
+    └── E2E/                   # Testes end-to-end
 
 
 
@@ -430,7 +431,8 @@ AgendaWeb.Tests/
 
 Desenvolvido com ❤️ usando ASP.NET Core
 
-⬆ Voltar ao Topo
+## Contato
+alexandre.trajano@gmail.com
 
-</div>
+www.linkedin.com/in/alexandre-trajano-b3417a39
 
