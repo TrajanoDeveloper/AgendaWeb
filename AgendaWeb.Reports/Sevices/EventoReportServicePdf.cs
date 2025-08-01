@@ -40,7 +40,7 @@ namespace AgendaWeb.Reports.Services
 
                 //título do documento
                 document.Add(new Paragraph("Relatório de Eventos").AddStyle(new Style().SetFontSize(24)));
-                document.Add(new Paragraph("COTI Informática - Agenda Web").AddStyle(new Style().SetFontSize(14)));
+                document.Add(new Paragraph("Agenda Web").AddStyle(new Style().SetFontSize(14)));
 
                 document.Add(new Paragraph("\n"));
 
